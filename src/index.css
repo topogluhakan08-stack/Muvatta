@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", serif;
+  --font-arabic: "Amiri", "Traditional Arabic", "Scheherazade New", serif;
+
+  --color-parchment-50: #FAF8F5;
+  --color-parchment-100: #F3EFE8;
+  --color-parchment-200: #E7E0D4;
+  --color-parchment-300: #D5CBB9;
+
+  --color-ink-950: #121110;
+  --color-ink-900: #1C1917;
+  --color-ink-800: #262320;
+  --color-ink-700: #3A3530;
+  --color-ink-600: #57514A;
+  --color-ink-500: #787066;
+
+  --color-gold-600: #8B6520;
+  --color-gold-500: #9A742B;
+  --color-gold-400: #C8A152;
+  --color-gold-300: #DFC07D;
+
+  --color-emerald-800: #165B43;
+  --color-emerald-700: #1E7054;
+  --color-emerald-400: #4FB28C;
+
+  --color-burgundy-800: #722630;
+  --color-burgundy-700: #8A303C;
+  --color-burgundy-400: #D47A85;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  .font-arabic {
+    font-family: var(--font-arabic);
+    line-height: 2.15;
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
+
+  .font-editorial {
+    font-family: var(--font-serif);
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  .dark body {
+    letter-spacing: 0.008em;
+  }
+
+  .card-scene-3d {
+    perspective: 1200px;
+  }
+
+  .card-inner-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .card-inner-3d.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+  .card-face-3d {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .card-face-back-3d {
+    transform: rotateY(180deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

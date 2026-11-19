@@ -1,0 +1,6 @@
+{
+  "name": "el-Muvatta' & Kitâbü's-Salât fî Ramadân Atlası",
+  "description": "TDV İslâm Ansiklopedisi maddeleri ve Kitâbü's-Salât fî Ramadân metni üzerine kurulu Türkçe–Fransızca etkileşimli dijital beşerî bilimler atlası.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
