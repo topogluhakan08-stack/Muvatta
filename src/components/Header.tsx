@@ -4,6 +4,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { useTheme } from '../contexts/ThemeContext';
 import { PRIMARY_NAV_ITEMS } from '../data/homeData';
 import type { AtlasRoute } from '../types/atlas';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface HeaderProps {
   activeRoute: AtlasRoute;
@@ -59,8 +60,9 @@ export function Header({ activeRoute, onNavigate, onOpenDrawer, drawerOpen }: He
           })}
         </nav>
 
-        {/* Zone 3: Language, Theme & Drawer Utility Controls */}
+        {/* Zone 3: Install, Language, Theme & Drawer Utility Controls */}
         <div className="flex items-center gap-2 shrink-0">
+          <PWAInstallButton />
           <button
             type="button"
             onClick={toggleFrench}

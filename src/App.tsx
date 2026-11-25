@@ -10,6 +10,7 @@ import { HomeView } from './components/HomeView';
 import { ImamMalikView } from './components/ImamMalikView';
 import { LearnView } from './components/LearnView';
 import { NavigationDrawer } from './components/NavigationDrawer';
+import { OfflineIndicator } from './components/OfflineIndicator';
 import { SettingsView } from './components/SettingsView';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ProgressProvider } from './contexts/ProgressContext';
@@ -35,6 +36,8 @@ function AtlasShell() {
         onOpenDrawer={() => setDrawerOpen(true)}
         drawerOpen={drawerOpen}
       />
+
+      <OfflineIndicator />
 
       <NavigationDrawer
         open={drawerOpen}

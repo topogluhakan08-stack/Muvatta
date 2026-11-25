@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="68%">
+      <stop offset="0%" stop-color="#1E7054" />
+      <stop offset="100%" stop-color="#103F2E" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E1A8" />
+      <stop offset="50%" stop-color="#DFC07D" />
+      <stop offset="100%" stop-color="#B08435" />
+    </linearGradient>
+    <linearGradient id="ivory" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#EAE1D0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed scholarly emerald background (safe for Android maskable shapes) -->
+  <rect width="512" height="512" fill="url(#bg)" />
+
+  <!-- Subtle corner architectural vignette ring -->
+  <circle cx="256" cy="256" r="228" fill="none" stroke="#DFC07D" stroke-width="2" opacity="0.16" />
+
+  <!-- Core Emblem comfortably inside 76% maskable safe zone -->
+  <g transform="translate(256, 256)">
+    <!-- Eight-pointed Rub el Hizb star -->
+    <rect
+      x="-116"
+      y="-116"
+      width="232"
+      height="232"
+      rx="18"
+      fill="none"
+      stroke="url(#gold)"
+      stroke-width="7.5"
+      opacity="0.95"
+    />
+    <rect
+      x="-116"
+      y="-116"
+      width="232"
+      height="232"
+      rx="18"
+      fill="none"
+      stroke="url(#gold)"
+      stroke-width="7.5"
+      transform="rotate(45)"
+      opacity="0.95"
+    />
+
+    <!-- Inner medallion -->
+    <circle cx="0" cy="0" r="116" fill="#134C38" stroke="url(#gold)" stroke-width="4.5" />
+    <circle
+      cx="0"
+      cy="0"
+      r="104"
+      fill="none"
+      stroke="url(#gold)"
+      stroke-width="1.6"
+      stroke-dasharray="4 6"
+      opacity="0.72"
+    />
+
+    <!-- Crescent & star above the manuscript (Ramadan motif) -->
+    <path d="M 10 -80 A 20 20 0 1 0 10 -44 A 15 15 0 1 1 10 -80 Z" fill="url(#gold)" />
+    <circle cx="15" cy="-62" r="4" fill="#FAF8F5" />
+
+    <!-- Open Classical Manuscript Book -->
+    <path
+      d="M -68 -22 C -42 -34 -14 -28 -4 -16 L -4 48 C -16 36 -44 32 -68 42 Z"
+      fill="url(#ivory)"
+      stroke="url(#gold)"
+      stroke-width="3.5"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M 68 -22 C 42 -34 14 -28 4 -16 L 4 48 C 16 36 44 32 68 42 Z"
+      fill="url(#ivory)"
+      stroke="url(#gold)"
+      stroke-width="3.5"
+      stroke-linejoin="round"
+    />
+
+    <!-- Book spine -->
+    <line x1="0" y1="-20" x2="0" y2="54" stroke="url(#gold)" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Stylized manuscript lines -->
+    <line x1="-54" y1="-6" x2="-16" y2="-2" stroke="#8B6520" stroke-width="3.4" stroke-linecap="round" opacity="0.88" />
+    <line x1="-54" y1="10" x2="-16" y2="14" stroke="#165B43" stroke-width="3.2" stroke-linecap="round" opacity="0.72" />
+    <line x1="-54" y1="26" x2="-22" y2="29" stroke="#165B43" stroke-width="3.2" stroke-linecap="round" opacity="0.55" />
+
+    <line x1="16" y1="-2" x2="54" y2="-6" stroke="#8B6520" stroke-width="3.4" stroke-linecap="round" opacity="0.88" />
+    <line x1="16" y1="14" x2="54" y2="10" stroke="#165B43" stroke-width="3.2" stroke-linecap="round" opacity="0.72" />
+    <line x1="22" y1="29" x2="54" y2="26" stroke="#165B43" stroke-width="3.2" stroke-linecap="round" opacity="0.55" />
+
+    <!-- Rahle (manuscript stand) base -->
+    <path
+      d="M -52 58 L 0 72 L 52 58"
+      fill="none"
+      stroke="url(#gold)"
+      stroke-width="5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <line x1="-26" y1="79" x2="26" y2="79" stroke="url(#gold)" stroke-width="3.5" stroke-linecap="round" opacity="0.88" />
+  </g>
+</svg>
